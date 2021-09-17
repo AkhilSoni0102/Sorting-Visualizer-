@@ -28,7 +28,7 @@ function generate_array()
         divs[i]=document.createElement("div");
         cont.appendChild(divs[i]);
         margin_size=0.1;
-        divs[i].style=" margin:0% " + margin_size + "%; background-color: #0077b6; width:" + (100/array_size-(2*margin_size)) + "%; height:" + (div_sizes[i]) + "%;";
+        divs[i].style=" margin:0% " + margin_size + "%; background-color: #344966; width:" + (100/array_size-(2*margin_size)) + "%; height:" + (div_sizes[i]) + "%;";
     }
 }
 

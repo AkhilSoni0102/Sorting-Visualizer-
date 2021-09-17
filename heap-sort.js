@@ -7,7 +7,7 @@ function Heap()
 }
 function HeapiFy(index, num)
 {
-    div_update(divs[index], div_sizes[index], "yellow");
+    div_update(divs[index], div_sizes[index], "ffcb69");//yellow
     var largest = index;
     var l = 2*index+1;
     var r = 2*index+2;
@@ -19,8 +19,8 @@ function HeapiFy(index, num)
         var temp = div_sizes[index];
         div_sizes[index] = div_sizes[largest];
         div_sizes[largest] = temp;
-        div_update(divs[index], div_sizes[index], "red");
-        div_update(divs[largest], div_sizes[largest], "red");
+        div_update(divs[index], div_sizes[index], "#980000"); // #red
+        div_update(divs[largest], div_sizes[largest], "#980000"); // #red
         HeapiFy(largest, num);
     }
 }
@@ -34,9 +34,9 @@ function HeapSort(num)
         var tempo = div_sizes[0];
         div_sizes[0] = div_sizes[i];
         div_sizes[i] = tempo;
-        div_update(divs[0], div_sizes[0], "red");
-        div_update(divs[i], div_sizes[i], "green");
+        div_update(divs[0], div_sizes[0], "#980000");// red
+        div_update(divs[i], div_sizes[i], "#208B3A");//green
         HeapiFy(0, i);
     }
-    div_update(divs[i], div_sizes[i], "green");     
+    div_update(divs[i], div_sizes[i], "#208B3A");//green     
 }
